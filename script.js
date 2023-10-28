@@ -1,11 +1,16 @@
-const card = document.querySelector("#card");
-const generate_btn = document.querySelector("#gen-btn");
-const input = document.querySelector("#my-input");
-const copy_btn = document.querySelector("#copy-btn");
-const icon = document.querySelector(".fa-solid");
+const card = document.querySelector("#card")
+const generate_btn = document.querySelector("#gen-btn")
+const input = document.querySelector("#my-input")
+const copy_btn = document.querySelector("#copy-btn")
+const icon = document.querySelector(".fa-solid")
+
+// Settings for tooltip
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 window.addEventListener('load', () => {
     setting_bg();
+    document.body.style.background = "linear-gradient(7deg, rgb(229, 10, 47), rgb(27, 77, 61), rgb(69, 124, 252))";
 });
 
 generate_btn.addEventListener('click', () => {
