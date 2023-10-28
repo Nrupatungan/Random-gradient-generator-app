@@ -10,7 +10,6 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 window.addEventListener('load', () => {
     setting_bg();
-    document.body.style.background = "linear-gradient(7deg, rgb(229, 10, 47), rgb(27, 77, 61), rgb(69, 124, 252))";
 });
 
 generate_btn.addEventListener('click', () => {
